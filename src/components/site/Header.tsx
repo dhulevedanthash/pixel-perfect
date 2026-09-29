@@ -46,7 +46,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between px-5 md:h-20 md:px-10">
         <Link to="/" className="font-display text-xl tracking-[0.18em] uppercase md:text-2xl">
-          {shop?.shop_name ?? "Maison Kaira"}
+          {shop?.shop_name ?? "RAJHANS COLLECTION\n"}
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
