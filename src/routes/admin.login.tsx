@@ -16,7 +16,7 @@ export const Route = createFileRoute("/admin/login")({
       { property: "og:description", content: "Secure login for Maison Kaira store staff." },
     ],
   }),
-  component: AdminLogin;
+  component: AdminLogin,
 });
 
 function AdminLogin() {
