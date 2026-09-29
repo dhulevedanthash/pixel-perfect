@@ -21,7 +21,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-[1400px] gap-12 px-5 py-16 md:grid-cols-4 md:px-10 md:py-24">
         <div className="md:col-span-1">
           <p className="font-display text-2xl tracking-[0.16em] uppercase">
-            RAJHANS COLLCECTION
+            RAJHANS COLLECTION
           </p>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-foreground/60">
             {shop?.tagline ?? "Style That Defines You"}
