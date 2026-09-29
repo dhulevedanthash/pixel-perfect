@@ -51,7 +51,7 @@ function Home() {
       <section className="relative">
         <div className="grid min-h-[78vh] md:grid-cols-[1fr_1.05fr]">
           <div className="order-2 flex flex-col justify-center px-5 py-14 md:order-1 md:px-14 lg:px-20">
-            <p className="eyebrow">{shop?.shop_name ?? "Maison Kaira"}</p>
+            <p className="eyebrow">RAJHANS COLLECTION</p>
             <h1 className="mt-6 font-display text-[3.25rem] leading-[0.98] tracking-tight md:text-[5.5rem]">
               Style That
               <br />
