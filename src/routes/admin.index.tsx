@@ -69,7 +69,7 @@ function Dashboard({ email }: { email: string }) {
     navigate({ to: "/admin/login" });
   };
 
-  const newEnquiries = (enquiries ?? []).filter((e) => !e.is_handled).length;
+  const newEnquiries = (enquiries ?? []).filter((e) => e.status !== "handled").length;
 
   return (
     <div className="min-h-screen bg-background">

@@ -15,7 +15,7 @@ export function EnquiriesPanel() {
   const markHandled = async (item: Enquiry) => {
     const { error } = await supabase
       .from("enquiries")
-      .update({ is_handled: !item.is_handled })
+      .update({ status: item.status === "handled" ? "new" : "handled" })
       .eq("id", item.id);
     if (error) toast.error(error.message);
     else refresh();
@@ -31,7 +31,7 @@ export function EnquiriesPanel() {
     }
   };
 
-  const pending = (enquiries ?? []).filter((e) => !e.is_handled).length;
+  const pending = (enquiries ?? []).filter((e) => e.status !== "handled").length;
 
   return (
     <div>
@@ -45,7 +45,7 @@ export function EnquiriesPanel() {
           <article key={item.id} className="py-4">
             <div className="flex flex-wrap items-center gap-3">
               <p className="font-medium">{item.name}</p>
-              {item.is_handled ? (
+              {item.status === "handled" ? (
                 <Badge variant="secondary">Handled</Badge>
               ) : (
                 <Badge>New</Badge>
@@ -74,7 +74,7 @@ export function EnquiriesPanel() {
                   </a>
                 </>
               ) : null}
-              {item.product_name ? ` · about ${item.product_name}` : ""}
+              {item.product ? ` · about ${item.product}` : ""}
             </p>
             <p className="mt-3 text-sm leading-relaxed">{item.message}</p>
           </article>
