@@ -39,7 +39,7 @@ function About() {
       <section className="mx-auto grid max-w-[1400px] gap-10 px-5 pb-20 md:grid-cols-2 md:gap-16 md:px-10">
         <div className="media-zoom aspect-[4/5]">
           <img
-            src="/images/store-interior.jpg"
+            src={undefined}
             alt="Inside the store"
             loading="lazy"
             className="h-full w-full object-cover"

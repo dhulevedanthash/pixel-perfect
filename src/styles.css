@@ -205,3 +205,8 @@
     display: none;
   }
 }
+
+img:not([src]),
+img[src=""] {
+  visibility: hidden;
+}
