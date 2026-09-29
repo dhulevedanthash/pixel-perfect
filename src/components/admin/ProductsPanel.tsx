@@ -170,7 +170,7 @@ export function ProductsPanel() {
         {(products ?? []).map((p) => (
           <div key={p.id} className="flex items-center gap-4 py-3">
             <img
-              src={p.image_url ?? "/images/hero.jpg"}
+              src={p.image_url ?? undefined}
               alt=""
               className="h-16 w-12 shrink-0 object-cover"
             />

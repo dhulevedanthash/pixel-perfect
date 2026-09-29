@@ -77,7 +77,7 @@ export function CategoriesPanel() {
         {(categories ?? []).map((cat) => (
           <div key={cat.id} className="flex items-center gap-4 py-3">
             <img
-              src={cat.image_url ?? "/images/hero.jpg"}
+              src={cat.image_url ?? undefined}
               alt=""
               className="h-14 w-12 shrink-0 object-cover"
             />

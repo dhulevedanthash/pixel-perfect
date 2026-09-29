@@ -67,7 +67,7 @@ function ProductDetail() {
   const { data: shop } = useQuery(shopSettingsQuery);
   const [activeImage, setActiveImage] = useState(0);
 
-  const images = product.images.length > 0 ? product.images : [product.image_url ?? "/images/hero.jpg"];
+  const images = product.images.length > 0 ? product.images : [product.image_url ?? ""];
   const categoryName = categoryNameOf(categories, product.category_id);
   const similar = (products ?? [])
     .filter((p) => p.is_published && p.id !== product.id && p.category_id === product.category_id)

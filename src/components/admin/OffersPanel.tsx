@@ -114,7 +114,7 @@ export function OffersPanel() {
         {(offers ?? []).map((offer) => (
           <div key={offer.id} className="flex items-center gap-4 py-3">
             <img
-              src={offer.image_url ?? "/images/offer-festive.jpg"}
+              src={offer.image_url ?? undefined}
               alt=""
               className="h-14 w-20 shrink-0 object-cover"
             />

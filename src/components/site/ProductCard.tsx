@@ -20,7 +20,7 @@ export function ProductCard({
         className="media-zoom block aspect-[3/4]"
       >
         <img
-          src={product.image_url ?? "/images/hero.jpg"}
+          src={product.image_url ?? undefined}
           alt={product.name}
           loading="lazy"
           className="h-full w-full object-cover"

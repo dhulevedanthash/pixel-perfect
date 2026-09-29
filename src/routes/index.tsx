@@ -80,7 +80,7 @@ function Home() {
           </div>
           <div className="order-1 md:order-2">
             <img
-              src="/images/hero.jpg"
+              src={undefined}
               alt="Model wearing the new season collection"
               width={1600}
               height={1920}
@@ -116,7 +116,7 @@ function Home() {
                 }`}
               >
                 <img
-                  src={cat.image_url ?? "/images/hero.jpg"}
+                  src={cat.image_url ?? undefined}
                   alt={cat.name}
                   loading="lazy"
                   className="h-full w-full object-cover"
@@ -157,7 +157,7 @@ function Home() {
       <section className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-20 md:grid-cols-2 md:gap-20 md:px-10 md:py-28">
         <div className="media-zoom aspect-[4/5]">
           <img
-            src="/images/editorial.jpg"
+            src={undefined}
             alt="The new collection"
             loading="lazy"
             className="h-full w-full object-cover"
@@ -217,7 +217,7 @@ function Home() {
                 <article key={offer.id} className="group">
                   <div className="media-zoom aspect-[4/3]">
                     <img
-                      src={offer.image_url ?? "/images/offer-festive.jpg"}
+                      src={offer.image_url ?? undefined}
                       alt={offer.title}
                       loading="lazy"
                       className="h-full w-full object-cover"
@@ -255,7 +255,7 @@ function Home() {
       <section className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-20 md:grid-cols-2 md:gap-20 md:px-10 md:py-28">
         <div className="media-zoom aspect-[4/5] md:order-1">
           <img
-            src="/images/store-interior.jpg"
+            src={undefined}
             alt="Inside the store"
             loading="lazy"
             className="h-full w-full object-cover"
@@ -283,7 +283,7 @@ function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <div className="media-zoom aspect-[4/3] md:col-span-2">
               <img
-                src="/images/store-exterior.jpg"
+                src={undefined}
                 alt="Store exterior"
                 loading="lazy"
                 className="h-full w-full object-cover"
@@ -291,7 +291,7 @@ function Home() {
             </div>
             <div className="media-zoom aspect-[4/3]">
               <img
-                src="/images/store-interior.jpg"
+                src={undefined}
                 alt="Clothing displays inside the store"
                 loading="lazy"
                 className="h-full w-full object-cover"

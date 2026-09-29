@@ -40,7 +40,7 @@ function Offers() {
           <article key={offer.id} className="grid items-center gap-8 md:grid-cols-2 md:gap-16">
             <div className={`media-zoom aspect-[4/3] ${i % 2 ? "md:order-2" : ""}`}>
               <img
-                src={offer.image_url ?? "/images/offer-festive.jpg"}
+                src={offer.image_url ?? undefined}
                 alt={offer.title}
                 loading="lazy"
                 className="h-full w-full object-cover"
